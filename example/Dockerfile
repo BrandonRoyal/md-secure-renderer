@@ -11,6 +11,6 @@ WORKDIR /content
 
 RUN tar -czf - * | openssl enc -e -aes256 -k $KEY -out content.tar.gz
 
-FROM broyal/md-secure-renderer:0.1
+FROM broyal/md-secure-renderer:latest
 
 COPY --from=builder /content/content.tar.gz /app/content.tar.gz

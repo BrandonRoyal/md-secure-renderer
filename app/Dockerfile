@@ -1,4 +1,6 @@
-FROM node:6.11.0
+FROM node:8.9.3
+
+RUN apt-get update && apt-get install -y zip
 
 COPY ./package.json /app/package.json
 
