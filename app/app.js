@@ -17,5 +17,5 @@ app.use(errorHandler); //TODO: fix error handler
 app.use('/', router);
 
 app.listen(8080, function(){
-    console.log("listing on 8080")
+    console.log("listening on 8080")
 })

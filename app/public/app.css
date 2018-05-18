@@ -19,3 +19,11 @@ img {
     background-color: #0087c9;
     border-color: #0087c9;
 }
+
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: white;
+}
