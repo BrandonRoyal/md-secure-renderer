@@ -9,9 +9,11 @@ set -e
 mkdir -p content
 
 if [ -z "$KEY" ]; then
-    echo "content encryption key to provided. try running again with -e KEY=<passphrase>"
+    echo "content encryption key not provided. try running again with -e KEY=<passphrase>"
     exit 1
 fi
 
 openssl enc -d -aes256 -k $KEY -in content.tar.gz | tar xz -C content
 rm content.tar.gz
+
+node app.js

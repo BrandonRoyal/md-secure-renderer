@@ -1,4 +1,6 @@
 #ignore test content
 content/
 
+www/
+
 node_modules/

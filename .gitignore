@@ -1,3 +1,5 @@
 #md-secure-renderer
 
 *.log
+
+node_modules/
